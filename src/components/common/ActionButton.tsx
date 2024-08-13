@@ -1,10 +1,10 @@
-import { Text, TouchableOpacity } from 'react-native';
+import { Text } from 'react-native';
 import styled from "styled-components/native";
 import Colors from '../../consts/Colors';
 import Texts from '../../consts/Texts';
 
 interface ActionButtonProps {
-    text: String;
+    text: string;
     onPress: () => void;
     disabled?: boolean;
 };
@@ -14,9 +14,11 @@ const ActionButtonContainer = styled.TouchableOpacity<{ $disabled: boolean }>`
     padding: 10px 0;
     border-radius: 8px;
     background-color: ${props => props.$disabled ? Colors.Gray300 : Colors.Gray900};
+    margin-top: auto;
+    margin-bottom: 20px;
 
     display: flex;
-    justify-content: center;
+    align-items: center;
 `;
 
 const ActionButton = (

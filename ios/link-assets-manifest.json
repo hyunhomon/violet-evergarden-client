@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/HeirofLightBold.ttf",
+      "sha1": "3f3c97a6069c8feea73f6350c92a42f7b55fa1f1"
+    },
+    {
+      "path": "src/assets/fonts/HeirofLightRegular.ttf",
+      "sha1": "d56895431ab7ff1296259a509a34a1329b6afee6"
+    }
+  ]
+}
