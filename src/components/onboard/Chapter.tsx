@@ -27,7 +27,7 @@ const ChapterContainer = styled.View`
 const ChapterChip = styled.View<{$disabled: boolean}>`
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 10000000px;
     background-color: ${props => props.$disabled ? Colors.Gray100 : Colors.Gray900};
 `;
 
