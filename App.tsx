@@ -1,12 +1,14 @@
+import { NavigationContainer } from '@react-navigation/native';
 import {SafeAreaView, StatusBar} from 'react-native';
-import RequestmentPage from './src/pages/RequestmentPage';
-import LetterPage from './src/pages/LetterPage';
+import StackNavigation from './Router';
 
 const App = () => {
   return (
     <SafeAreaView>
       <StatusBar hidden />
-      <LetterPage />
+      <NavigationContainer>
+        <StackNavigation />
+      </NavigationContainer>
     </SafeAreaView>
   );
 };
