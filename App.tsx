@@ -1,13 +1,17 @@
-import { NavigationContainer } from '@react-navigation/native';
-import {SafeAreaView, StatusBar} from 'react-native';
-import StackNavigation from './Router';
+import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaView, StatusBar } from "react-native";
+import StackNavigation from "./Router.tsx";
+import { createStackNavigator } from "@react-navigation/stack";
 
 const App = () => {
+
+  const Stack = createStackNavigator();
+
   return (
-    <SafeAreaView>
-      <StatusBar hidden />
+    <SafeAreaView style={{flex: 1}}>
       <NavigationContainer>
-        <StackNavigation />
+        <StatusBar hidden />
+        <StackNavigation/>
       </NavigationContainer>
     </SafeAreaView>
   );

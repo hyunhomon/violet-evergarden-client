@@ -6,6 +6,7 @@ import IconButton from '../components/common/IconButton';
 import ActionButton from '../components/common/ActionButton';
 import ContentContainer from '../components/requestment/ContentContainer';
 import Finish from '../components/requestment/Finish';
+import { useNavigation } from "@react-navigation/native";
 
 interface Req {
     title: string;
@@ -44,6 +45,7 @@ const Style = StyleSheet.create({
 });
 
 const RequestmentPage = () => {
+    const navigation = useNavigation();
     const [index, setIndex] = useState(0);
     const [inputText, setInputText] = useState('');
     const [buttonActivate, setButtonActivate] = useState(false);
@@ -93,8 +95,7 @@ const RequestmentPage = () => {
                                 setIndex(prev => prev-1);
                             }
                             else {
-                                // todo: else case
-                                console.log('start')
+                                navigation.navigate('Main')
                             }
                         }}
                     />
@@ -125,15 +126,19 @@ const RequestmentPage = () => {
                 <Finish
                     title={'작성하신 의뢰서가\n성공적으로 접수되었어요'}
                     content='접수된 의뢰는 의뢰 목록에 추가되었습니다'
-                    onPress={() => {}}
+                    onPress={() => {
+                    }}
                 />
             }
-            <ActionButton
-                text='다음'
-                onPress={onNextIndex}
-                disabled={!buttonActivate}
-            />
-        </KeyboardAvoidingView>
+            {index != 4 ? <ActionButton
+              text="다음"
+              onPress={onNextIndex}
+              disabled={!buttonActivate}
+            /> : <ActionButton text={'확인'} onPress={()=>{
+              //여기에서 저장된 정보를 보내야 주어야 함
+              navigation.navigate('Chat')
+            }}/>}
+            </KeyboardAvoidingView>
     );
 };
 

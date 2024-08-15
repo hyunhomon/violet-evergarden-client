@@ -5,6 +5,7 @@ import Colors from "../consts/Colors.tsx";
 import React, { useState } from "react";
 import { Add, Check } from "../assets/icons";
 import View = Animated.View;
+import { useNavigation } from "@react-navigation/native";
 
 interface unitProps {
   onPress: () => void;
@@ -14,6 +15,7 @@ interface unitProps {
 }
 
 const Main = () => {
+  const navigation = useNavigation();
 
   //false is request
   const [activated, setActivated] = useState(false);
@@ -60,6 +62,7 @@ const Main = () => {
           style={[Texts.Caption12Reg, { color: Colors.Gray500 }]}>도착하면 이메일로 알려드릴게요</Text></NoContentContainer>
     )}
     <AddButton onPress={() => {
+      navigation.navigate('Requestment')
     }}><Add /></AddButton>
   </Screen>);
 };
@@ -145,8 +148,8 @@ const ListUnit = ({ title, date, onPress, checked }: unitProps) => {
       width: 24,
       height: 24,
       backgroundColor: Colors.Gray900,
-      borderRadius: 100
-    }}><Check /></View> : null}
+      borderRadius: 12
+    }}><Check width={24} height={24}/></View> : null}
   </ListUnitContainer>);
 };
 

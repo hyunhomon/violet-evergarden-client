@@ -5,6 +5,7 @@ import Texts from "../consts/Texts";
 import ActionButton from "../components/common/ActionButton";
 import { useState } from "react";
 import Finish from "../components/requestment/Finish";
+import { useNavigation } from "@react-navigation/native";
 
 const Style = StyleSheet.create({
     WholeContainer: {
@@ -36,6 +37,7 @@ const Style = StyleSheet.create({
 });
 
 const LetterPage = () => {
+    const navigation = useNavigation();
     const sender = '김현호';
     const receiver = '박찬규';
     const [isFinish, setIsFinish] = useState(false);
@@ -51,7 +53,9 @@ const LetterPage = () => {
                 <View style={Style.InsideContainer}>
                     <View style={Style.TopContainer}>
                         <IconButton name="Back" size={24}
-                            onPress={() => {}}
+                            onPress={() => {
+                                navigation.navigate('Chat')
+                            }}
                         />
                         <Text style={[Texts.Body14Bold, {color: Colors.Gray900}]}>편지 확인</Text>
                         <View style={{width: 24}} />

@@ -4,9 +4,12 @@ import ActionButton from "../components/common/ActionButton.tsx";
 import React, { useEffect, useState } from "react";
 import Texts from "../consts/Texts.tsx";
 import Colors from "../consts/Colors.tsx";
-import {Text} from "react-native";
+import { Text, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import Main from "./Main.tsx";
 
 const Onboard = () => {
+  const navigation = useNavigation();
   const [contents, setContents] = useState([
     "️편지를 통해\n당신의 진심을 전해보세요",
     "직접 작성하거나\n그녀에게 대필을 맡겨보세요",
@@ -37,7 +40,9 @@ const Onboard = () => {
         <Chapter index={current} />
         {current !== 5 ? <ButtonContainer><ActionButton text={"다음"} onPress={() => {
           setCurrent(current + 1);
-        }} disabled={false} /></ButtonContainer> : <ButtonContainer><Text>대충 구글 로그인 버튼</Text></ButtonContainer>}
+        }} disabled={false} /></ButtonContainer> : <ButtonContainer><TouchableOpacity onPress={()=>{
+          navigation.navigate('Main');
+        }}><Text>대충 구글 로그인 버튼</Text></TouchableOpacity></ButtonContainer>}
       </Screen>
   );
 };

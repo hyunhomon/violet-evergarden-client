@@ -1,11 +1,11 @@
-import { Animated, KeyboardAvoidingView, Platform, Text } from "react-native";
+import { Animated, KeyboardAvoidingView, Platform, Text, TouchableOpacity, View } from "react-native";
 import styled from "styled-components/native";
 import Texts from "../consts/Texts.tsx";
 import Colors from "../consts/Colors.tsx";
 import { Back, Check } from "../assets/icons";
-import React, { useEffect, useLayoutEffect } from "react";
-import View = Animated.View;
+import React, { useEffect } from "react";
 import { MyUnit, VioletUnit } from "../components/chat/ChatUnit.tsx";
+import { useNavigation } from "@react-navigation/native";
 
 interface message {
   who: string;
@@ -14,6 +14,7 @@ interface message {
 }
 
 const Chat = () => {
+  const navigation = useNavigation();
   const [violetMessages, setVioletMessages] = React.useState<string[]>([
     "고객님이 원하신다면 어디든 달려가겠습니다.\n자동 수기 인형 서비스, 바이올렛 에버가든입니다.",
     "고객님이 원하신다면 어디든 달려가겠습니다.\n자동 수기 인형 서비스, 바이올렛 에버가든입니다.",
@@ -45,7 +46,9 @@ const Chat = () => {
         <Header>
           <Back />
           <Text style={[Texts.Body14Bold, { color: "#000" }]}>편지 대필</Text>
-          <View style={{ borderRadius: 20, backgroundColor: "#000" }}><Check /></View>
+          <TouchableOpacity style={{ borderRadius: 20, backgroundColor: "#000" }} onPress={()=>{
+            navigation.navigate('Letter')
+          }}><Check width={24} height={24}/></TouchableOpacity>
         </Header>
         <ChatContainer>
           {sumMessages.map((items:message)=>(<MyUnit message={items.text}/>))}
