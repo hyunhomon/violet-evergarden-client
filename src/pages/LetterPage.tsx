@@ -78,7 +78,9 @@ const LetterPage = () => {
                         content="편지는 수취인의 편지 보관함에 추가되었습니다"
                         onPress={() => {}}
                     />
-                    <ActionButton text="확인" onPress={() => {}} />
+                    <ActionButton text="확인" onPress={() => {
+                        navigation.navigate('Main')
+                    }} />
                 </View>
             }
         </View>
