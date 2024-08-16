@@ -25,7 +25,6 @@ const Onboard = () => {
     require("../assets/images/img5.png")
   ]);
   const [current, setCurrent] = useState<number>(1);
-  const [enableLogin, setEnableLogin] = useState<boolean>(false);
 
   useEffect(() => {
     if (current > 5) setCurrent(1);
@@ -41,7 +40,8 @@ const Onboard = () => {
       {current !== 5 ? <ButtonContainer><ActionButton text={"다음"} onPress={() => {
         setCurrent(current + 1);
       }} disabled={false} /></ButtonContainer> : <ButtonContainer><TouchableOpacity onPress={() => {
-
+        AsyncStorage.setItem('isFirst', 'true')
+        navigation.navigate("Main");
       }}><Text>대충 구글 로그인 버튼</Text></TouchableOpacity></ButtonContainer>}
     </Screen>
   );
