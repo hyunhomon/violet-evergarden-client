@@ -6,10 +6,10 @@ import Texts from "../consts/Texts.tsx";
 import Colors from "../consts/Colors.tsx";
 import { Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Main from "./Main.tsx";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Onboard = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const [contents, setContents] = useState([
     "️편지를 통해\n당신의 진심을 전해보세요",
     "직접 작성하거나\n그녀에게 대필을 맡겨보세요",
@@ -33,17 +33,17 @@ const Onboard = () => {
   }, [current]);
 
   return (
-      <Screen>
-        <OnboardImg source={imgPath[current - 1]} />
-        <Text
-          style={[Texts.HeadingSmall, { color: Colors.Gray900, textAlign: "center" }]}>{contents[current - 1]}</Text>
-        <Chapter index={current} />
-        {current !== 5 ? <ButtonContainer><ActionButton text={"다음"} onPress={() => {
-          setCurrent(current + 1);
-        }} disabled={false} /></ButtonContainer> : <ButtonContainer><TouchableOpacity onPress={()=>{
-          navigation.navigate('Main');
-        }}><Text>대충 구글 로그인 버튼</Text></TouchableOpacity></ButtonContainer>}
-      </Screen>
+    <Screen>
+      <OnboardImg source={imgPath[current - 1]} />
+      <Text
+        style={[Texts.HeadingSmall, { color: Colors.Gray900, textAlign: "center" }]}>{contents[current - 1]}</Text>
+      <Chapter index={current} />
+      {current !== 5 ? <ButtonContainer><ActionButton text={"다음"} onPress={() => {
+        setCurrent(current + 1);
+      }} disabled={false} /></ButtonContainer> : <ButtonContainer><TouchableOpacity onPress={() => {
+
+      }}><Text>대충 구글 로그인 버튼</Text></TouchableOpacity></ButtonContainer>}
+    </Screen>
   );
 };
 
