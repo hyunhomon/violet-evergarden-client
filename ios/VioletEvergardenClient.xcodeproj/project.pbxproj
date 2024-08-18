@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* VioletEvergardenClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VioletEvergardenClientTests.m */; };
+		017D531269094771901698FF /* HeirofLightRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F2593B2D7A4C759FF36AE4 /* HeirofLightRegular.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-VioletEvergardenClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-VioletEvergardenClient.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -16,7 +17,6 @@
 		7699B88040F8A987B510C191 /* libPods-VioletEvergardenClient-VioletEvergardenClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-VioletEvergardenClient-VioletEvergardenClientTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C13EA748B7AF4FE8B75321E1 /* HeirofLightBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 266ACDF8D6DE4B9D9613DB89 /* HeirofLightBold.ttf */; };
-		017D531269094771901698FF /* HeirofLightRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F2593B2D7A4C759FF36AE4 /* HeirofLightRegular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +40,17 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VioletEvergardenClient/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VioletEvergardenClient/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = VioletEvergardenClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		175050FBC1AC06ED14F6E2BB /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient-VioletEvergardenClientTests/Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-VioletEvergardenClient-VioletEvergardenClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VioletEvergardenClient-VioletEvergardenClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-VioletEvergardenClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient.debug.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient/Pods-VioletEvergardenClient.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-VioletEvergardenClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient.release.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient/Pods-VioletEvergardenClient.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient-VioletEvergardenClientTests/Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		266ACDF8D6DE4B9D9613DB89 /* HeirofLightBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HeirofLightBold.ttf; path = ../src/assets/fonts/HeirofLightBold.ttf; sourceTree = "<group>"; };
+		52F2593B2D7A4C759FF36AE4 /* HeirofLightRegular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HeirofLightRegular.ttf; path = ../src/assets/fonts/HeirofLightRegular.ttf; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-VioletEvergardenClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VioletEvergardenClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63941CE5F4A96090944137AD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = VioletEvergardenClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		63941CE5F4A96090944137AD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = VioletEvergardenClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VioletEvergardenClient/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient-VioletEvergardenClientTests/Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4BBDC9B602A719EDD1C1A24 /* Pods-VioletEvergardenClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient.debug.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient/Pods-VioletEvergardenClient.debug.xcconfig"; sourceTree = "<group>"; };
+		E17ADB290A52695DD2B19EC1 /* Pods-VioletEvergardenClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient.release.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient/Pods-VioletEvergardenClient.release.xcconfig"; sourceTree = "<group>"; };
+		E6DB2E8A96EA79C28868CC5E /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig"; path = "Target Support Files/Pods-VioletEvergardenClient-VioletEvergardenClientTests/Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		266ACDF8D6DE4B9D9613DB89 /* HeirofLightBold.ttf */ = {isa = PBXFileReference; name = "HeirofLightBold.ttf"; path = "../src/assets/fonts/HeirofLightBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		52F2593B2D7A4C759FF36AE4 /* HeirofLightRegular.ttf */ = {isa = PBXFileReference; name = "HeirofLightRegular.ttf"; path = "../src/assets/fonts/HeirofLightRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +115,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4AEFDFA8501B47A2A01701CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				266ACDF8D6DE4B9D9613DB89 /* HeirofLightBold.ttf */,
+				52F2593B2D7A4C759FF36AE4 /* HeirofLightRegular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		756D57A1BFD447149D4C01CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4BBDC9B602A719EDD1C1A24 /* Pods-VioletEvergardenClient.debug.xcconfig */,
+				E17ADB290A52695DD2B19EC1 /* Pods-VioletEvergardenClient.release.xcconfig */,
+				175050FBC1AC06ED14F6E2BB /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig */,
+				E6DB2E8A96EA79C28868CC5E /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +151,8 @@
 				00E356EF1AD99517003FC87E /* VioletEvergardenClientTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				4AEFDFA8501B47A2A01701CC /* Resources */,
+				756D57A1BFD447149D4C01CE /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,27 +167,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B4392A12AC88292D35C810B /* Pods-VioletEvergardenClient.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-VioletEvergardenClient.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		4AEFDFA8501B47A2A01701CC /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				266ACDF8D6DE4B9D9613DB89 /* HeirofLightBold.ttf */,
-				52F2593B2D7A4C759FF36AE4 /* HeirofLightRegular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -433,7 +433,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig */;
+			baseConfigurationReference = 175050FBC1AC06ED14F6E2BB /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -460,7 +460,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig */;
+			baseConfigurationReference = E6DB2E8A96EA79C28868CC5E /* Pods-VioletEvergardenClient-VioletEvergardenClientTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -484,7 +484,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-VioletEvergardenClient.debug.xcconfig */;
+			baseConfigurationReference = D4BBDC9B602A719EDD1C1A24 /* Pods-VioletEvergardenClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -511,7 +511,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-VioletEvergardenClient.release.xcconfig */;
+			baseConfigurationReference = E17ADB290A52695DD2B19EC1 /* Pods-VioletEvergardenClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
